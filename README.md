@@ -1,4 +1,4 @@
-# Kusetsart Polls
+# Kasetsart Polls
 
 Web application for conducting online polls and surveys using Python with Django.
 
