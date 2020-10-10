@@ -1,4 +1,4 @@
-# Kasetsart Polls
+# Kasetsart Polls [![Build Status](https://travis-ci.com/kidstylex/ku-polls.svg?branch=master)](https://travis-ci.com/kidstylex/ku-polls)
 A polls application [Individual Software Process](https://cpske.github.io/ISP) course 2020 at [Kasetsart University](https://ku.ac.th).
 
 Web application for conducting online polls and surveys using Python with Django.
