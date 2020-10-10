@@ -10,12 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='question',
-            name='end_date',
-            field=models.DateTimeField(
-                default=None,
-                ull=True,
-                verbose_name='ending date'),
+        migrations.AddField(model_name='question', name='end_date', field=models.DateTimeField(default=None, ull=True, verbose_name='ending date'),
         ),
     ]
