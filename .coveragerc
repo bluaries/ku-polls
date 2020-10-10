@@ -5,9 +5,9 @@ branch = True
 cover_pylib = False
 
 omit =
-    /usr/*
-    mysite/*   # the main application 
-    manage.py
+    *__init__*
+    *views.py*
+    *manage.py*
 
 # explicitly include the main app
 include =

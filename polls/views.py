@@ -54,9 +54,7 @@ def vote(request, question_id):
         select_choice.votes += 1
         select_choice.save()
 
-        return HttpResponseRedirect(reverse(
-            'polls:results',
-            args=(question.id,)))
+    return HttpResponseRedirect(reverse('polls:results',args=(question.id,)))
 
 
 def vote_allowed(request, pk):
