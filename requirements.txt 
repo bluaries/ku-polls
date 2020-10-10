@@ -1,0 +1,5 @@
+ # Django version
+ Django >= 2.1.2
+
+ #Package
+ python-decouple
