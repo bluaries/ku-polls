@@ -10,3 +10,4 @@ Web application for conducting online polls and surveys using Python with Django
 
 Iterations
 * [Iteration 1 Plan](../../wiki/Iteration-1-Plan) and [Task Board](../../projects/3)
+* [Iteration 2 Plan](../../wiki/Iteration-2-Plan) and [Task Board](../../projects/4)

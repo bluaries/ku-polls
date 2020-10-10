@@ -1,11 +1,31 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
 <h1>{{ question.question_text}}</h1>
 
+{% if messages %}
+<ul class="messages">
+  {% for msg in messages %}
+    <li class="{{msg.tags}}">{{ msg }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 <ul>
+
+<div class="row">
+    <span class="column" style="background-color:rgb(90, 183, 211);">Choice</span>
+    <span class="column" style="background-color:rgb(89, 184, 110);">Total vote</span>
+</div>
+
 {% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }}
-        vote{{ choice.votes|pluralize}}
-    </li>
+<div class="row">
+    <span class="column" style="background-color:rgb(149, 208, 226);">{{ choice.choice_text }}</span>
+    <span class="column" style="background-color:rgb(149, 226, 166);">{{choice.votes}} </span>
+</div>
+
 {% endfor %}
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+<p><a href="{% url 'polls:index' %}" >Back to List of Polls</a></p>
