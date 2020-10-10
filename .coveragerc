@@ -7,8 +7,7 @@ cover_pylib = False
 omit =
     /usr/*
     mysite/*   # the main application 
-    # TODO: omit unit test files and directories
-    # TODO: omit migrations
+    manage.py
 # explicitly include the main app
 include =
     polls/*
