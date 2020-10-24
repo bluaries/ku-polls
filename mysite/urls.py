@@ -21,4 +21,5 @@ urlpatterns = [
     path('', views.IndexView.as_view()),
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
